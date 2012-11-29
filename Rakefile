@@ -12,7 +12,7 @@ RSpec::Core::RakeTask.new("spec:translations") do |spec|
   spec.pattern = 'spec/unit/**/*_spec.rb'
 end
 
-require 'i18n-spec/tasks' # needs to be loaded after rspec
+# require 'i18n-spec/tasks' # needs to be loaded after rspec
 
 # Load any custom rakefiles for extension
 Dir[ File.expand_path('lib/tasks/*.rake', File.dirname(__FILE__)) ].sort.each { |f| load f }
